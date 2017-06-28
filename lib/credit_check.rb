@@ -2,7 +2,6 @@ class Validator
   attr_reader :card_number
   def initialize(card_number)
     @card_number = card_number
-    @valid = false
   end
 
   def validate_card
