@@ -1,5 +1,3 @@
-require 'pry'
-  # Your Luhn Algorithm Here
 class Validator
   attr_reader :card_number
   def initialize(card_number)
@@ -16,7 +14,6 @@ class Validator
 
   def reverse_split
     @card_number = card_number.reverse.chars
-    # @card_number = card_number.chars
   end
 
   def doubler
@@ -28,7 +25,7 @@ class Validator
       end
     end
   end
-  # if sum is over 10, split and add digits together
+
   def splitter
     @card_number = card_number.map do |value|
       if value > 9
@@ -38,19 +35,14 @@ class Validator
       end
     end
   end
-  # sum entire array together
+
   def check_card
     @card_number = card_number.sum
     if @card_number % 10 == 0
-      @valid = true
+      puts "The number is valid!"
     else
-      @valid = false
+      puts "The number is invalid!"
     end
   end
-  # if sum of array % 10 == 0 card is valid
-  # else card is invalid
 
-  # Output
-  ## If it is valid, print "The number is valid!"
-  ## If it is invalid, print "The number is invalid!"
 end
