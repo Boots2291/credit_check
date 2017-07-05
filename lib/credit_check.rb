@@ -13,11 +13,11 @@ class Validator
   end
 
   def reverse_split
-    @card_number = card_number.reverse.chars
+    card_number.reverse.chars
   end
 
   def doubler
-    @card_number = card_number.map.with_index do |value, index|
+    reverse_split.map.with_index do |value, index|
       if index.odd?
         value = value.to_i * 2
       else
@@ -27,7 +27,7 @@ class Validator
   end
 
   def splitter
-    @card_number = card_number.map do |value|
+    doubler.map do |value|
       if value > 9
         value -= 9
       else
@@ -37,8 +37,8 @@ class Validator
   end
 
   def check_card
-    @card_number = card_number.sum
-    if @card_number % 10 == 0
+    doubler = card_number.sum
+    if doubler % 10 == 0
       puts "The number is valid!"
     else
       puts "The number is invalid!"

@@ -1,4 +1,4 @@
-require './credit_check'
+require './lib/credit_check'
 
-new_card = Validator.new("342801633855673")
+new_card = Validator.new("5541808923795240")
 puts new_card.validate_card

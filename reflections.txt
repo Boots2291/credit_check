@@ -1,0 +1,34 @@
+Michael Butera
+1706BEE M1
+
+Credit Check Reflections
+
+1. What did you learn from this project?
+
+	This project taught me how to use classes and instance variables. It also
+	helped introduce how I as a student am expected to understand the assignment
+	and read the rubric.
+
+2. Where did you struggle with this project?
+
+	I struggled most before learning about classes. When I was originally setting
+	up the script I found that I was having very long functions. After setting up
+	the class, I think I had the most trouble with doubling every other number.
+
+3. What did you learn from your struggle?
+
+	I learned how to use map.with_index, which allowed me to iterate over the array
+	of numbers and double every other integer. Learning how to use that method
+	required some reading and cross-referencing, which will help me in the future.
+
+4. What risks did you take with this project?
+
+	I decided to split my project into two files. One with the script, and one as
+	a runner file. I was unsure about how to do so properly, but after implementing
+	what I thought was right, it worked.
+
+5. What are you most proud of from this project?
+
+	I am most proud of how my script does not require any special functions
+	for the American Express card number extension. I wrote the code in such a way
+	that it can take 15 or 16 digits the same way.
